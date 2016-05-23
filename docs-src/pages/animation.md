@@ -125,6 +125,4 @@ class Main extends UpdateAncestor {
 
 `UpdateAncestor` may be imported from `src/modules/update-ancestor`.
 
-### Sprites
-
-Coming Soon!
+### More animation documentation, tips & techniques coming soon!
