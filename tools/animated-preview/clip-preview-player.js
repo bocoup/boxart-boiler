@@ -71,10 +71,12 @@ export default class ClipPreviewPlayer extends ClipPlayer {
     const wires = this._getWires();
     if (!wires) {return;}
 
+    this._restore();
     const inputs = this._getWireInputs();
     const wireProperties = this._getWireProperties();
 
     this._primeStore(inputs, wires, wireProperties);
+    this._replace();
     this._step(t, inputs, wires, wireProperties);
 
     const tNormalized = t / this.clipDuration();
